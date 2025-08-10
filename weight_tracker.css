@@ -1,0 +1,106 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+.container {
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #2c3e50;
+}
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+input[type="number"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #3498db;
+  color: white;
+  transition: background 0.3s;
+}
+button:hover {
+  background-color: #2980b9;
+}
+.btn-secondary {
+  background-color: #95a5a6;
+}
+.btn-secondary:hover {
+  background-color: #7f8c8d;
+}
+/* Chart container constrains height */
+.chart-container {
+  position: relative;
+  height: 400px;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+.records {
+  margin-top: 20px;
+}
+.records h2 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+.record-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  background: #f9f9f9;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  font-size: 0.95rem;
+  align-items: center;
+}
+.arrow-up {
+  color: red;
+  font-size: 1.2rem;
+}
+.arrow-down {
+  color: green;
+  font-size: 1.2rem;
+}
+.arrow-equal {
+  color: orange;
+  font-size: 1.2rem;
+}
+@media (max-width: 768px) {
+  form {
+	flex-direction: column;
+  }
+  input[type="number"],
+  button {
+	width: 100%;
+  box-sizing: border-box;
+  }
+  .chart-container {
+	height: 250px;
+  }
+}

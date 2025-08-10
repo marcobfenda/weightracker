@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Weight Tracker</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<link rel="stylesheet" href="weight_tracker.css" />
+</head>
+
+<body>
+	<div class="container">
+		<h1>Weight Tracker</h1>
+		<form id="weightForm">
+			<input type="number" id="weightInput" placeholder="Enter your weight (kg)" step="0.1" required />
+			<button type="submit">Save</button>
+			<button type="button" id="exportData" class="btn-secondary">Export Data</button>
+			<button type="button" id="importData" class="btn-secondary">Import Data</button>
+			<input type="file" id="fileInput" accept=".json" style="display:none" />
+		</form>
+
+		<div class="chart-container">
+			<canvas id="weightChart"></canvas>
+		</div>
+
+		<div class="records">
+			<h2>Weight Records</h2>
+			<div id="recordList"></div>
+		</div>
+	</div>
+	<script src="weight_tracker.js"></script>
+</body>
+
+</html>
